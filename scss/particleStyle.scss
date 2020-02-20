@@ -2,9 +2,9 @@ $s1:"";
 $s2:"";
 $s3:"";
 @for $i from 1 through 20 {
-    $s1: $s1 + random(1000)*0.1vw + " " + random(1000)*0.1vh + " " + 0 + " " + random(50)*-0.01rem + #fff;
-    $s2: $s2 + random(1000)*0.1vw + " " + random(1000)*0.1vh + " " + 0 + " " + random(50)*-0.01rem + #ffcbf2;
-    $s3: $s3 + random(1000)*0.1vw + " " + random(1000)*0.1vh + " " + 0 + " " + random(50)*-0.01rem + rgb(196, 221, 255);
+    $s1: $s1 + random(1000)*0.1vw + " " + random(1000)*0.1vh + " " + 0 + " " + random(50)*-0.01rem  ;
+    $s2: $s2 + random(1000)*0.1vw + " " + random(1000)*0.1vh + " " + 0 + " " + random(50)*-0.01rem  ;
+    $s3: $s3 + random(1000)*0.1vw + " " + random(1000)*0.1vh + " " + 0 + " " + random(50)*-0.01rem  ;
     @if $i < 20 {
         $s1: $s1 + ",";
         $s2: $s2 + ",";
@@ -32,6 +32,7 @@ $s3:"";
 .layer2 {
     width: 1.2rem;
     height: 1.2rem;
+    background-image: url("../img/hardhatIcon.png");
     box-shadow: #{$s2};
     //filter: blur(1px);
     animation-duration: 32s;

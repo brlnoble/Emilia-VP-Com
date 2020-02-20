@@ -14,77 +14,60 @@ body {
   margin: 0 auto;
   padding: 0;
   font-family: Arial;
-  background: radial-gradient(circle at 100%,#7397a1 1%,#3f2c41 100%);
+  /* background: radial-gradient(circle at 100%,#7397a1 1%,#3f2c41 100%); */
+  background-color: #FFF;
   height: 120vh;
   font-family: 'Comfortaa', sans-serif;
   color: white;
 }
 
-/* ----------------------Nav Bar------------------------ */
-
+/*-------------------------Nav Bar-----------------------*/
 .nav {
   position: fixed; /*navigation always at top of screen*/
   top: 0;
-  padding-top: 0;
   width: 100%;
-  background: rgb(82, 27, 183);
+  background: #7368E3;
   z-index: 100; /*keep it on top of everything else*/
-  height: 8vh; /*scale with window size*/
+  height: 6vh; /*scale with window size*/
   border-bottom-style: solid;
   border-bottom-width: 4px;
-  border-color: rgb(144, 102, 242);
-}
-
-@media only screen and (max-height: 600px) {
-  .nav {
-      height: 48px;
-  }
+  border-color: #C2BCF8;
 }
 
 .nav-items {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   list-style: none;
   margin: 0;
   padding-top: 0;
-  font-size: 1em;
+  font-size: 1.5vw;
   font-weight: bold;
 }
 
-.push {
-  margin-left: auto;
-}
 
 li {
   padding: 20px;
   padding-top: 10px;
-  transition: all 0.3s ease;
-}
-
-nav li:hover { /*increase text size when hovering*/
-  font-size: 120%;
 }
 
 a {
-  color: #FFFFFF;
+  color: #FFF;
   text-decoration: none;
-}
-
-.signIn {
-  padding: 10px;
+  padding: 2px;
   margin: 0;
   border-style: solid;
-  border-color: #FFF;
+  border-color: rgba(255, 255, 255, 0);
   border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover { /*increase text size when hovering*/
+  border-color: #FFF;
 }
 
 /* ----------------------Form------------------------ */
-
-.wrapper {
-  z-index: 1;
-}
 
 .submitButton {
   left: 50%;
@@ -155,21 +138,3 @@ a {
     font-size: 1em;
   }
 } 
-
-/* -----------------------Footer-------------------------- */
-
-footer {
-  text-align: center;
-  position: absolute;
-  top: 120%;
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 50%;
-  background: #666;
-  padding: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  z-index: 100;
-}

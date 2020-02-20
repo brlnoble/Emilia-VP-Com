@@ -1,55 +1,28 @@
 html { /*hide scroll wheel*/
-    overflow: hidden;
+    overflow: scroll;
     overflow-x: hidden;
-    transition: all 0.3s ease;
-}
-::-webkit-scrollbar {
+  }
+  ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
-}
-
-body {
+    display: none;
+  }
+  
+  /* ------------------Basic formatting------------------- */
+  
+  body {
     margin: 0 auto;
     padding: 0;
     font-family: Arial;
+    /* background: radial-gradient(circle at 100%,#7397a1 1%,#3f2c41 100%); */
     background-color: #FFF;
-    height: 100vh;
+    /* height: 120vh; */
     font-family: 'Comfortaa', sans-serif;
     color: white;
-}
-
-/*------------------------Main Head----------------------*/
-.cover {
-    position: relative;
-    color: #FFF;
-    text-shadow: 0 0 20px #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    /* top: 10vh; */
-    padding-top: 0;
-}
-
-.cover h1 {
-    /* margin-top: -20vh; */
-    font-size: 4vw;
-}
-.cover img {
-    position: relative;
-    /* left: 10%;
-    width: 80vw; */
-    width: 60%;
-    min-width: 650px;
-}
-
-.cover p {
-    font-size: 2vw;
-}
-
-
-/*-------------------------Nav Bar-----------------------*/
-.nav {
+  }
+  
+  /*-------------------------Nav Bar-----------------------*/
+  .nav {
     position: fixed; /*navigation always at top of screen*/
     top: 0;
     width: 100%;
@@ -59,9 +32,9 @@ body {
     border-bottom-style: solid;
     border-bottom-width: 4px;
     border-color: #C2BCF8;
-}
-
-.nav-items {
+  }
+  
+  .nav-items {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -71,15 +44,15 @@ body {
     padding-top: 0;
     font-size: 1.5vw;
     font-weight: bold;
-}
-
-
-li {
+  }
+  
+  
+  li {
     padding: 20px;
     padding-top: 10px;
-}
-
-a {
+  }
+  
+  a {
     color: #FFF;
     text-decoration: none;
     padding: 2px;
@@ -88,16 +61,15 @@ a {
     border-color: rgba(255, 255, 255, 0);
     border-radius: 10px;
     transition: all 0.3s ease;
-}
-
-nav a:hover { /*increase text size when hovering*/
+  }
+  
+  nav a:hover { /*increase text size when hovering*/
     border-color: #FFF;
-}
-
-/*--------------------Main Body----------------------*/
-
+  }
+  
+/*-----------------------Information----------------*/
 .textBlock {
-    background-color:rgba(194, 188, 248, .7);
+    background-color:rgba(194, 188, 248, .9);
     width: 50vw;
     padding-left: 60px;
     padding-right: 60px;
@@ -118,27 +90,40 @@ nav a:hover { /*increase text size when hovering*/
         );
 }
 
-.title {
-    position: relative;
-    right: 10%;
-    margin-top: -100px;
-}
-
-@media only screen and (max-height: 600px) { /*keep nav bar from shrinking too much*/
-    .nav {
-        height: 48px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .title {
-        position: relative;
-        left: 5%;
-        top: 0;
-        margin-top: 0;
-    }
-
+  
+  @media only screen and (max-width: 600px) { 
     .nav-items {
-        font-size: 2vw;
+      font-size: 3vw;
+      padding: 0;
+  }
+  .nav {
+      height: 48px;
+  }
+    .formBlock {
+        font-size: 1em;
     }
-}
+    .submitButton {
+      font-size: 1em;
+    }
+  } 
+
+  /*---------------------Cursed Background---------------*/
+  .wrapper {
+    background: #FFF url(../img/heads.jpg) repeat 0 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    height: 100vh;
+    padding-top: 120px;
+    box-sizing: border-box;
+    -webkit-animation: slide 20s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  @-webkit-keyframes slide {
+      from { background-position: 0 0; }
+      to { background-position: 0 1361px; }
+  }
