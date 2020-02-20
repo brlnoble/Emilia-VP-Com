@@ -1,16 +1,16 @@
 html { /*hide scroll wheel*/
     overflow: scroll;
     overflow-x: hidden;
-  }
-  ::-webkit-scrollbar {
+}
+::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
     display: none;
-  }
+}
   
-  /* ------------------Basic formatting------------------- */
+/* ------------------Basic formatting------------------- */
   
-  body {
+body {
     margin: 0 auto;
     padding: 0;
     font-family: Arial;
@@ -19,10 +19,10 @@ html { /*hide scroll wheel*/
     /* height: 120vh; */
     font-family: 'Comfortaa', sans-serif;
     color: white;
-  }
+}
   
-  /*-------------------------Nav Bar-----------------------*/
-  .nav {
+/*-------------------------Nav Bar-----------------------*/
+.nav {
     position: fixed; /*navigation always at top of screen*/
     top: 0;
     width: 100%;
@@ -32,9 +32,9 @@ html { /*hide scroll wheel*/
     border-bottom-style: solid;
     border-bottom-width: 4px;
     border-color: #C2BCF8;
-  }
+}
   
-  .nav-items {
+.nav-items {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -44,15 +44,15 @@ html { /*hide scroll wheel*/
     padding-top: 0;
     font-size: 1.5vw;
     font-weight: bold;
-  }
+}
   
   
-  li {
+li {
     padding: 20px;
     padding-top: 10px;
-  }
+}
   
-  a {
+a {
     color: #FFF;
     text-decoration: none;
     padding: 2px;
@@ -61,18 +61,18 @@ html { /*hide scroll wheel*/
     border-color: rgba(255, 255, 255, 0);
     border-radius: 10px;
     transition: all 0.3s ease;
-  }
+}
   
-  nav a:hover { /*increase text size when hovering*/
+nav a:hover { /*increase text size when hovering*/
     border-color: #FFF;
-  }
+}
   
 /*-----------------------Information----------------*/
 .textBlock {
     background-color:rgba(194, 188, 248, .9);
     width: 50vw;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 60px;
+    margin: 60px;
     border-radius:20px;
     transition: all 1s ease;
     --notchSize: 40px;
@@ -90,8 +90,29 @@ html { /*hide scroll wheel*/
         );
 }
 
-  
-  @media only screen and (max-width: 600px) { 
+  /*---------------------Cursed Background---------------*/
+.wrapper {
+background: #FFF url(../img/heads.jpg) repeat 0 0;
+width: 100%;
+margin: 0;
+text-align: center;
+height: 120vh;
+padding-top: 120px;
+box-sizing: border-box;
+animation: slide 20s linear infinite;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+
+@keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: 0 1361px; }
+}
+
+@media only screen and (max-width: 600px) { 
     .nav-items {
       font-size: 3vw;
       padding: 0;
@@ -99,31 +120,7 @@ html { /*hide scroll wheel*/
   .nav {
       height: 48px;
   }
-    .formBlock {
-        font-size: 1em;
-    }
-    .submitButton {
-      font-size: 1em;
+    .wrapper {
+        height: 100%;
     }
   } 
-
-  /*---------------------Cursed Background---------------*/
-  .wrapper {
-    background: #FFF url(../img/heads.jpg) repeat 0 0;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    height: 100vh;
-    padding-top: 120px;
-    box-sizing: border-box;
-    -webkit-animation: slide 20s linear infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
-  @-webkit-keyframes slide {
-      from { background-position: 0 0; }
-      to { background-position: 0 1361px; }
-  }
