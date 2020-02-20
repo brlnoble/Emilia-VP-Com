@@ -39,7 +39,8 @@ body {
     position: relative;
     /* left: 10%;
     width: 80vw; */
-    width: 100%;
+    width: 60%;
+    min-width: 650px;
 }
 
 .cover p {
@@ -54,7 +55,7 @@ body {
     width: 100%;
     background: #7368E3;
     z-index: 100; /*keep it on top of everything else*/
-    height: 8vh; /*scale with window size*/
+    height: 6vh; /*scale with window size*/
     border-bottom-style: solid;
     border-bottom-width: 4px;
     border-color: #C2BCF8;
@@ -103,7 +104,6 @@ a {
     width: 50vw;
     padding-left: 60px;
     padding-right: 60px;
-    margin-top: -40vh;
     border-radius:20px;
     transition: all 1s ease;
     --notchSize: 40px;
@@ -122,9 +122,9 @@ a {
 }
 
 .title {
-    position: absolute;
-    left: 10%;
-    top: 40vw;
+    position: relative;
+    right: 10%;
+    margin-top: -100px;
 }
 
 @media only screen and (max-height: 600px) { /*keep nav bar from shrinking too much*/

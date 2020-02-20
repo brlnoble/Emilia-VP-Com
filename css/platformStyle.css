@@ -53,7 +53,7 @@ body {
     width: 100%;
     background: #7368E3;
     z-index: 100; /*keep it on top of everything else*/
-    height: 8vh; /*scale with window size*/
+    height: 6vh; /*scale with window size*/
     border-bottom-style: solid;
     border-bottom-width: 4px;
     border-color: #C2BCF8;
@@ -73,7 +73,7 @@ body {
     list-style: none;
     margin: 0;
     padding-top: 0;
-    font-size: 1em;
+    font-size: 1.5vw;
     font-weight: bold;
 }
 
@@ -203,7 +203,7 @@ a {
 
 @media only screen and (max-width: 600px) {
     .nav-items {
-        font-size: 3vw;
+        font-size: 2vw;
         padding: 0;
     }
     .nav {
