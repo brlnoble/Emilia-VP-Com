@@ -126,7 +126,7 @@ nav a:hover { /*increase text size when hovering*/
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1; /*make it the farthest object back*/
-    background-image: url("../img/mac_JHE.jpg");
+    background-image: url("../img/RingPic.jpg");
 }
 /*--------------------------Grid-------------------------*/
 .mainBlock {
