@@ -29,7 +29,7 @@ body {
     justify-content: center;
     margin-bottom: 100px;
     margin-top: -50px;
-    padding-top: 0;
+    padding: 0;
 }
 
 .details {
@@ -42,13 +42,7 @@ body {
     text-shadow: 0 0 20px #000;
 }
 
-.cover > img {
-    box-shadow: 0 0 20px #000;
-    border-radius: 50px;
-    margin-right: 20px;
-    width: 12vh;
-    height: 12vh;
-}
+
 
 /*-------------------------Nav Bar-----------------------*/
 .nav {
@@ -224,7 +218,7 @@ nav a:hover { /*increase text size when hovering*/
         padding: 30px;
     }
     .container {
-        height: 60vh;
+        height: 50vh;
      }
     /*.parallax {
         background-image: url("../img/RingPic.jpg");
