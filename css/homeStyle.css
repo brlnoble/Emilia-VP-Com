@@ -27,18 +27,14 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* top: 10vh; */
     padding-top: 0;
 }
 
 .cover h1 {
-    /* margin-top: -20vh; */
     font-size: 4vw;
 }
 .cover img {
     position: relative;
-    /* left: 10%;
-    width: 80vw; */
     width: 60%;
     min-width: 650px;
 }
@@ -87,7 +83,6 @@ body {
 
 li {
     padding: 20px;
-    /* padding-top: 10px; */
 }
 
 a {

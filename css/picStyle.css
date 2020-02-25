@@ -14,9 +14,7 @@ body {
     margin: 0 auto;
     padding: 0;
     font-family: Arial;
-    /* background: radial-gradient(circle at 100%,#7397a1 1%,#3f2c41 100%); */
     background-color: #FFF;
-    /* height: 120vh; */
     font-family: 'Comfortaa', sans-serif;
     color: white;
 }
@@ -60,7 +58,6 @@ body {
   
 li {
     padding: 20px;
-    /* padding-top: 10px; */
 }
   
 a {

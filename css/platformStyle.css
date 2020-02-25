@@ -220,10 +220,4 @@ nav a:hover { /*increase text size when hovering*/
     .container {
         height: 50vh;
      }
-    /*.parallax {
-        background-image: url("../img/RingPic.jpg");
-        transform: none;
-        background-size: 100vw;
-        padding-top: 40px;
-    } */
 }
