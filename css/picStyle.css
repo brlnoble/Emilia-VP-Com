@@ -82,6 +82,8 @@ nav a:hover { /*increase text size when hovering*/
     padding: 60px;
     margin: 60px;
     border-radius:20px;
+    font-size: 120%;
+    cursor: default;
     transition: all 1s ease;
     --notchSize: 40px;
   /*cut the edges slightly to give the chipped look*/
@@ -103,8 +105,8 @@ nav a:hover { /*increase text size when hovering*/
 background: #FFF url(../img/heads.jpg) repeat 0 0;
 width: 100%;
 margin: 0;
-text-align: center;
-height: 120vh;
+text-align: justify;
+height: 140vh;
 padding-top: 120px;
 box-sizing: border-box;
 animation: slide 20s linear infinite;
@@ -131,4 +133,9 @@ flex-direction: column;
     .wrapper {
         height: 100%;
     }
-  } 
+} 
+
+/* Easter egg... */
+.Wes {
+    cursor: url("../img/mrfox.png"), auto; 
+}
