@@ -133,11 +133,6 @@ nav a:hover { /*increase text size when hovering*/
     color: #000;
 }
 
-.vid p {
-    margin-left: 10vw;
-    margin-right: 10vw;
-}
-
 /* video */
 iframe {
     width: 50vw;
@@ -162,9 +157,8 @@ iframe {
         font-size: 2vw;
     }
 
-    .vid p {
-        margin-left: 0;
-        margin-right: 0;
+    .vid {
+        padding: 10px;
     }
 }
 
