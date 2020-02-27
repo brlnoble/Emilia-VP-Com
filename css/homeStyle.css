@@ -1,5 +1,5 @@
 html { /*hide scroll wheel*/
-    overflow: hidden;
+    overflow: scroll;
     overflow-x: hidden;
     transition: all 0.3s ease;
 }
@@ -124,6 +124,26 @@ nav a:hover { /*increase text size when hovering*/
     margin-top: -100px;
 }
 
+.vid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+    padding: 50px;
+    color: #000;
+}
+
+.vid p {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+/* video */
+iframe {
+    width: 50vw;
+    height: 28.125vw; /* 16:9 ratio, 9/16*50=28.125 */
+}
+
 @media only screen and (max-height: 600px) { /*keep nav bar from shrinking too much*/
     .nav {
         height: 48px;
@@ -140,6 +160,11 @@ nav a:hover { /*increase text size when hovering*/
 
     .nav-items {
         font-size: 2vw;
+    }
+
+    .vid p {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
