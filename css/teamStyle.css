@@ -19,7 +19,7 @@ body {
     text-align: center;
 }
 
-/*------------------------Main Head----------------------*/
+/*------------------------Main Body----------------------*/
 .mainWrap h1 {
     position: relative;
     top: 5vh;
@@ -33,6 +33,25 @@ body {
     font-size: 2vw;
 }
 
+#em {
+    color: #968DEE;
+}
+
+#brando {
+    color: #B986ED;
+}
+
+#jon {
+    color: #85B6EC;
+}
+
+#zach {
+    color: #7ED9EA;
+}
+
+#drogas {
+    color: #8AA1ED;
+}
 
 /*-------------------------Nav Bar-----------------------*/
 .nav {
@@ -49,12 +68,6 @@ body {
     margin: 0;
     display: flex;
     align-items: center;
-}
-
-@media only screen and (max-height: 600px) { /*keep nav bar from shrinking too much*/
-    .nav {
-        height: 48px;
-    }
 }
 
 .nav-items {
@@ -88,30 +101,6 @@ a {
 
 nav a:hover { /*increase text size when hovering*/
     border-color: #FFF;
-}
-
-/*--------------------Main Body----------------------*/
-
-.textBlock {
-    background-color:rgba(194, 188, 248, .7);
-    width: 50vw;
-    padding-left: 60px;
-    padding-right: 60px;
-    border-radius:20px;
-    transition: all 1s ease;
-    --notchSize: 40px;
-  /*cut the edges slightly to give the chipped look*/
-    clip-path: 
-        polygon(
-            0% var(--notchSize), 
-            var(--notchSize) 0%, 
-            calc(100% - var(--notchSize)) 0%, 
-            1000% var(--notchSize), 
-            100% calc(100% - var(--notchSize)), 
-            calc(100% - var(--notchSize)) 100%, 
-            var(--notchSize) 100%, 
-            -1000% calc(100% - var(--notchSize))
-        );
 }
 
 @media only screen and (max-height: 600px) { /*keep nav bar from shrinking too much*/

@@ -61,12 +61,6 @@ body {
     align-items: center;
 }
 
-@media only screen and (max-height: 600px) { /*keep nav bar from shrinking too much*/
-    .nav {
-        height: 48px;
-    }
-}
-
 .nav-items {
     width: 100%;
     display: flex;
@@ -220,4 +214,10 @@ nav a:hover { /*increase text size when hovering*/
     .container {
         height: 50vh;
      }
+}
+
+@media only screen and (max-height: 600px) { /*keep nav bar from shrinking too much*/
+    .nav {
+        height: 48px;
+    }
 }

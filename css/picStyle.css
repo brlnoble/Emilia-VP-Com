@@ -36,12 +36,6 @@ body {
     align-items: center;
 }
 
-@media only screen and (max-height: 600px) { /*keep nav bar from shrinking too much*/
-    .nav {
-        height: 48px;
-    }
-}
-
 .nav-items {
     width: 100%;
     display: flex;
@@ -134,6 +128,12 @@ flex-direction: column;
         height: 100%;
     }
 } 
+
+@media only screen and (max-height: 600px) { /*keep nav bar from shrinking too much*/
+    .nav {
+        height: 48px;
+    }
+}
 
 /* Easter egg... */
 .Wes {
