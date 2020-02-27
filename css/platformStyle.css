@@ -195,9 +195,10 @@ nav a:hover { /*increase text size when hovering*/
     background-color: #7ED9EA;
 }
 
+/* video */
 iframe {
     width: 50vw;
-    height: 28.125vw;
+    height: 28.125vw; /* 16:9 ratio, 9/16*50=28.125 */
 }
 
 @media only screen and (max-width: 600px) {
