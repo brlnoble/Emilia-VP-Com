@@ -20,6 +20,10 @@ body {
 }
 
 /*------------------------Main Body----------------------*/
+.mainWrap {
+    margin: 20px;
+}
+
 .mainWrap h1 {
     position: relative;
     top: 5vh;
@@ -51,6 +55,11 @@ body {
 
 #drogas {
     color: #8AA1ED;
+}
+
+.email {
+    font-size: 60%;
+    color: #CCC;
 }
 
 /*-------------------------Nav Bar-----------------------*/
