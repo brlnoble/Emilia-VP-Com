@@ -1,0 +1,127 @@
+html { /*hide scroll wheel*/
+    overflow: scroll;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial;
+    background-color: #FFF;
+    height: 100vh;
+    font-family: 'Comfortaa', sans-serif;
+    color: #000;
+    text-align: center;
+}
+
+/*------------------------Main Head----------------------*/
+.mainWrap h1 {
+    position: relative;
+    top: 5vh;
+    font-size: 4vw;
+    margin: 100px;
+    padding: 20px;
+}
+
+.mainWrap p {
+    padding: 20px;
+    font-size: 2vw;
+}
+
+
+/*-------------------------Nav Bar-----------------------*/
+.nav {
+    position: fixed; /*navigation always at top of screen*/
+    top: 0;
+    width: 100%;
+    background: #7368E3;
+    z-index: 100; /*keep it on top of everything else*/
+    height: 6vh; /*scale with window size*/
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-color: #C2BCF8;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-height: 600px) { /*keep nav bar from shrinking too much*/
+    .nav {
+        height: 48px;
+    }
+}
+
+.nav-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+
+li {
+    padding: 20px;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 2px;
+    margin: 0;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover { /*increase text size when hovering*/
+    border-color: #FFF;
+}
+
+/*--------------------Main Body----------------------*/
+
+.textBlock {
+    background-color:rgba(194, 188, 248, .7);
+    width: 50vw;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius:20px;
+    transition: all 1s ease;
+    --notchSize: 40px;
+  /*cut the edges slightly to give the chipped look*/
+    clip-path: 
+        polygon(
+            0% var(--notchSize), 
+            var(--notchSize) 0%, 
+            calc(100% - var(--notchSize)) 0%, 
+            1000% var(--notchSize), 
+            100% calc(100% - var(--notchSize)), 
+            calc(100% - var(--notchSize)) 100%, 
+            var(--notchSize) 100%, 
+            -1000% calc(100% - var(--notchSize))
+        );
+}
+
+@media only screen and (max-height: 600px) { /*keep nav bar from shrinking too much*/
+    .nav {
+        height: 48px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-items {
+        font-size: 2vw;
+    }
+}
